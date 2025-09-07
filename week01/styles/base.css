@@ -1,0 +1,57 @@
+
+body{ /* This will edit the body*/
+  display: grid;
+  grid-template-columns: auto 5fr;
+  align-items: center;
+  margin: auto;
+}
+
+header{
+    grid-column: 1/5;
+
+}
+
+#course-title{
+    display: flex;
+    justify-content: center;
+
+}
+
+ .navbar ul{
+    list-style-type: none;
+    background-color: rgb(12, 66, 68);
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: space-around;
+
+}
+main{ /* This will edit the main content */
+    display: grid;
+    grid-template-columns: auto 5fr;
+    align-items: center;
+    margin: auto;
+    grid-column: 1/5;
+}
+
+h1{
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+footer{ /* This will edit the footer */
+    display: grid;
+    grid-template-columns: auto 5fr;
+    align-items: center;
+    margin: auto;
+}
+
+#currentyear{
+    display: flex;
+    justify-content: center;
+}
+#lastModified{
+    display: flex;
+    justify-content: center;
+}
