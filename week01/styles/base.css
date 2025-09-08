@@ -1,0 +1,51 @@
+
+body{ /* This will edit the body*/
+  display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+header{
+    display: grid;
+    grid-column: 1/6;
+}
+
+#course-title{
+    display: flex;
+    justify-content: center;
+
+}
+
+ .navbar ul{
+    list-style-type: none;
+    background-color: rgb(12, 66, 68);
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: space-around;
+
+}
+h1{ /* This will edit the main content */
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.card p{
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+
+footer{ /* This will edit the footer */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#currentyear{
+
+}
+#lastModified{
+
+}
