@@ -1,48 +1,75 @@
 
-body{ /* This will edit the body*/
-  display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: 20% 20% 20% 20% 20%;
+:root {
+  --primary-color: #42b672;/* Changes heading color */
+  --secondary-color: #142445; 
+  --accent1-color: #4345c5;
+  --accent2-color: #513d70;
+  --heading-font: "Roboto";
+  --body-font: "Montserrat";
 }
+header {
+  background-color: var(--primary-color); 
+  color: var(--accent2-color);
 
-header{
-    display: grid;
-    grid-column: 1/6;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+body{
+    background-color: rgb(93, 157, 162); /* changes background color */
+    font-family: var(--body-font);
+    color: var(--accent1-color);
 }
 
 #course-title{
     display: flex;
-    justify-content: center;
+    justify-content:center;
 
 }
-
- .navbar ul{
-    list-style-type: none;
-    background-color: rgb(12, 66, 68);
-    padding: 0px;
-    margin: 0px;
+.navbar ul{
     display: flex;
     justify-content: space-around;
 
 }
-h1{ /* This will edit the main content */
-    display: flex;
-    justify-content: flex-end;
-    
+
+
+main{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr ; /* or however many columns you want */
+  gap: 20px;
 }
-#card p{
-    display: grid;
-    grid-column: 1/3;
+main h1{
+  grid-column: 1 / -1; /* makes h1 span all columns */
+    text-align: center;
 }
 
 
-footer{ /* This will edit the footer */
+.card_one { /* These cards are seprate names because it was a nightmare trying to split them on the grid sepreatly*/
+  grid-column: 1 / 3;
+  padding: 1rem;
+  background: rgb(205, 184, 184);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgb(253, 4, 4)
+}
 
+.card_two {
+  grid-column: 4/ 5;
+  padding: 1rem;
+  background: rgb(205, 184, 184);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgb(253, 4, 4)
 }
 
 #currentyear{
-
+  display: flex;
+  justify-content: flex-start;
 }
-#lastModified{
 
+#lastmodified{
+  display: flex;
+  justify-content: flex-end;
 }
+
