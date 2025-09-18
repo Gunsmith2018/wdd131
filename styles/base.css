@@ -1,9 +1,9 @@
 
 :root {
-  --primary-color: #42b672;/* Changes heading color */
-  --secondary-color: #142445; 
-  --accent1-color: #4345c5;
-  --accent2-color: #513d70;
+  --primary-color:#226c3a;/* Changes heading color */
+  --secondary-color: #ffffff; 
+  --accent1-color: #000000;
+  --accent2-color: #0c0518;/*Messes with the titile color*/
   --heading-font: "Roboto";
   --body-font: "Montserrat";
 }
@@ -19,7 +19,7 @@ header {
     list-style-type: none;
 }
 body{
-    background-color: rgb(93, 157, 162); /* changes background color */
+    background-color: #7B326E; /* changes background color */
     font-family: var(--body-font);
     color: var(--accent1-color);
 }
@@ -33,6 +33,18 @@ body{
     display: flex;
     justify-content: space-around;
 
+}
+.navbar ul li a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: background 0.3s, color 0.3s;
+}
+
+.navbar ul li a:hover {
+  background: var(--accent1-color);
+  color: #000000;
+  border-radius: 4px;
 }
 
 
@@ -50,17 +62,16 @@ main h1{
 .card_one { /* These cards are seprate names because it was a nightmare trying to split them on the grid sepreatly*/
   grid-column: 1 / 3;
   padding: 1rem;
-  background: rgb(205, 184, 184);
+  background: #3e2525;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgb(253, 4, 4)
+  box-shadow: 0 2px 8px #fd0404
 }
-
 .card_two {
   grid-column: 4/ 5;
   padding: 1rem;
-  background: rgb(205, 184, 184);
+  background: #3e2525;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgb(253, 4, 4)
+  box-shadow: 0 2px 8px #fd0404;
 }
 
 #currentyear{
