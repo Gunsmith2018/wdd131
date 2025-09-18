@@ -52,6 +52,8 @@ main{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /* or however many columns you want */
   gap: 20px;
+  width: 100%;
+  margin: auto;
 }
 main h1{
   grid-column: 1 / -1; /* makes h1 span all columns */
