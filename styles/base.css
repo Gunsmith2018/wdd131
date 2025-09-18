@@ -53,6 +53,7 @@ main{
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /* or however many columns you want */
   gap: 20px;
   width: 100%;
+  max-width: 1200px; /* or any value you prefer */
   margin: auto;
 }
 main h1{
