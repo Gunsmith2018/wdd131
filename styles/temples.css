@@ -24,7 +24,10 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--heading-color);
     font-family: var(--heading-font);
 }
-
+h1{
+    text-align: center;
+    margin: 20px 0;
+}
 .navbar ul li a {
   color: var(--paragraph-text);
   text-decoration: none;
@@ -47,9 +50,16 @@ h1, h2, h3, h4, h5, h6 {
 
 main{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /* or however many columns you want */
+    grid-template-columns: 1fr; /* or however many columns you want */
     gap: 20px;
-    width: 100%;
-    max-width: 1200px; /* or any value you prefer */
+    width: 100px;
+    max-width: 800px; /* or any value you prefer */
     margin: auto;
+}
+.temple img{
+    max-width: 200px;
+}
+footer{
+    display: flex;
+    justify-content: center;
 }

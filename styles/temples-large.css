@@ -1,0 +1,23 @@
+@media screen and (min-width: 600px) {
+:root {
+  --primary-color: #232946;      /* Changes primary color */
+  --background-color: #282c34;   /* Changes background color */
+  --footer-color: #e9e1e1;       /* Changes footer color */
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* or however many columns you want */
+    grid-template-rows: repeat(3, auto);
+    gap: 20px;
+    width: 100%;
+    max-width: 900px; /* or any value you prefer */
+    margin: auto;
+}
+h1{
+    grid-column: 1/-1;
+}
+footer{
+    display: flex;
+    justify-content: center;
+}
+}
