@@ -28,6 +28,26 @@ h1 {
     text-align: center;
     margin: 20px 0;
 }
+/* small view navigation */
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: #fffafa;
+ 	position: absolute; top: 0; right: 0;
+    cursor: pointer;
+}
+
+#menu::before {
+	content: "☰";
+		position: absolute;
+	top:0;
+	right:0;
+}
+
+#menu.open::before {
+	content: "✖";
+}
 .navbar ul li a {
   color: var(--paragraph-text);
   text-decoration: none;
@@ -35,10 +55,23 @@ h1 {
   transition: background 0.3s, color 0.3s;
 }
 .navbar ul{
-    display: flex;
-    justify-content: space-between;
+    display: none;
+    flex-direction: column;
     padding: 1rem;
     background-color: var(--primary-color);
+    position: absolute;
+    top: 2.5rem;
+    right: 1rem;
+    width: 150px;
+    border-radius: 8px;
+    z-index: 100;
+}
+
+#menu.open + ul {
+  display: flex;
+}
+.navbar ul.open {
+  display: flex;
 }
 
 

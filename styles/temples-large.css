@@ -16,6 +16,18 @@ main{
 h1{
     grid-column: 1/-1;
 }
+  #menu {
+    display: none;
+  }
+  .navbar ul {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-between;
+    position: static;
+    background: none;
+    width: auto;
+    padding: 1rem;
+  }
 footer{
     display: flex;
     justify-content: center;
