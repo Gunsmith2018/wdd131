@@ -67,9 +67,6 @@ h1 {
     z-index: 100;
 }
 
-#menu.open + ul {
-  display: flex;
-}
 .navbar ul.open {
   display: flex;
 }
@@ -81,7 +78,7 @@ h1 {
   border-radius: 4px;
 }
 
-main{
+main{ /*Handles the main content*/
     display: grid;
     grid-template-columns: 1fr; /* or however many columns you want */
     gap: 20px;
@@ -97,7 +94,7 @@ display: grid;
 .temple img{
     max-width: 200px;
 }
-footer{
+footer{/* handles the footer*/
     display: flex;
     justify-content: center;
 }
