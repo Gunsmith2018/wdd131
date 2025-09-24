@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--heading-color);
     font-family: var(--heading-font);
 }
-h1{
+h1 {
     text-align: center;
     margin: 20px 0;
 }
@@ -55,6 +55,11 @@ main{
     width: 100px;
     max-width: 800px; /* or any value you prefer */
     margin: auto;
+}
+h2{
+display: grid;
+    grid-column: 1/-1;
+    justify-self: center;
 }
 .temple img{
     max-width: 200px;
