@@ -4,7 +4,8 @@
     --footer-color: #e9e1e1; /* Changes footer color */
     --paragraph-text: #e1f3ee; /* Changes paragraph/primary text color */
     --heading-color: #d61b1b;/*Changes heading Color*/
-    --box-color: 0 2px 8px #4095e6; /* Changes box shadow color */
+    --box-color: #4095e6; /* Fixed: Now just the color value */
+    --box-shadow: 0 2px 8px #4095e6; /* Added separate shadow variable */
     --heading-font: "Roboto";
     --body-font: "Montserrat";
 }
@@ -30,23 +31,23 @@ h1 {
 }
 /* small view navigation */
 #menu {
-	font-size: 1.5rem;
-	border: 0;
-	background: none;
-	color: #fffafa;
- 	position: absolute; top: 0; right: 0;
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #fffafa;
+     position: absolute; top: 0; right: 0;
     cursor: pointer;
 }
 
 #menu::before {
-	content: "☰";
-		position: absolute;
-	top:0;
-	right:0;
+    content: "☰";
+    position: absolute;
+    top:0;
+    right:0;
 }
 
 #menu.open::before {
-	content: "✖";
+    content: "✖";
 }
 .navbar ul li a {
   color: var(--paragraph-text);
@@ -71,9 +72,8 @@ h1 {
   display: flex;
 }
 
-
 .navbar ul li a:hover {
-  background: var(--box-color);
+  background: var(--box-color); /* Now properly uses the color */
   color: #fdfeff;
   border-radius: 4px;
 }
@@ -82,12 +82,12 @@ main{ /*Handles the main content*/
     display: grid;
     grid-template-columns: 1fr; /* or however many columns you want */
     gap: 20px;
-    width: 100px;
+    width: 100%; /* Fixed: was 100px, should be 100% */
     max-width: 800px; /* or any value you prefer */
     margin: auto;
 }
 h2{
-display: grid;
+    display: grid;
     grid-column: 1/-1;
     justify-self: center;
 }
