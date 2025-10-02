@@ -40,9 +40,33 @@ header{
 main {
     display: grid;
     grid-template-columns: 1fr;  /* Single column on mobile */
-    gap: 1.5rem;
-    padding: 1rem;
-    max-width: 1200px;
-    margin: 0 auto;
+ 
 }
+.data-table, .weather-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.data-table td, .weather-table td {
+    padding: 12px 15px;
+    border: 1px solid var(--border-color);
+}
+
+.data-table, .weather-table {
+
+    color: #fff;
+    text-align: left;
+}
+
+#currentyear{
+    display: flex;
+    text-align: center;
+}
+
+#lastmodified{
+    display: flex;
+    text-align: center;
+}
+
 
