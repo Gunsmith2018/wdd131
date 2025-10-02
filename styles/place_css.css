@@ -37,12 +37,13 @@ header{
     max-width: 50px;
 }
 
-main {
-    display: grid;
-    grid-template-columns: 1fr;  /* Single column on mobile */
- 
+h2{
+    display: flex;
+    justify-content: center;
 }
 .data-table, .weather-table {
+    display: flex;
+    justify-content: center;
     width: 100%;
     border-collapse: collapse;
     margin: 20px 0;
