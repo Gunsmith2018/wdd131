@@ -1,0 +1,48 @@
+/* CSS Variables */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --text-color: #333;
+    --background-color: #f8f9fa;
+    --border-color: #ddd;
+    --heading-font: "Roboto", sans-serif;
+    --body-font: "Montserrat", sans-serif;
+}
+
+body {
+    font-family: var(--body-font);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: var(--primary-color);
+    
+}
+#page-title {
+    font-family: var(--heading-font);
+    display: flex;
+    justify-self: center;
+    color: var(--background-color);
+    margin: 20px 0;
+}
+.responsive-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+.responsive-image img {
+    max-width: 50px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;  /* Single column on mobile */
+    gap: 1.5rem;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
