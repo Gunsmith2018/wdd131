@@ -1,0 +1,39 @@
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #ff9800;
+    --third-color: #2196F3;
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --font-size: 16px;
+    --line-height: 1.5;
+    --background-color: #f4f4f4;
+    --text-color: #333;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+#course-title{
+    display: flex;
+    justify-content:center;
+
+}
+.navbar ul{
+    display: flex;
+    justify-content: space-around;
+
+}
+.navbar ul li a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  padding: 0.5rem 1rem; 
+  transition: background 0.3s, color 0.3s;
+}
+
+.navbar ul li a:hover {
+  background: var(--accent1-color);
+  color: #000000;
+  border-radius: 4px;
+}
