@@ -51,6 +51,7 @@
 }
 .info_card img{
   border-radius: 50%;
+  max-width: 200px;
   object-fit: cover;
   border: 3px solid var(--primary-color);
   padding: 5px;
