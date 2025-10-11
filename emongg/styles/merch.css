@@ -15,10 +15,12 @@
     list-style-type: none;
 }
 
-#course-title{
+#page-title{
     display: flex;
     justify-content:center;
-
+    font-size: 2rem;
+    color: var(--primary-color);
+    padding: 10px 0;
 }
 .navbar ul{
     display: flex;

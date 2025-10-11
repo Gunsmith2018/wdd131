@@ -15,10 +15,12 @@
     list-style-type: none;
 }
 
-#course-title{
+#page-title{
     display: flex;
     justify-content:center;
-
+    font-size: 2rem;
+    color: var(--primary-color);
+    padding: 10px 0;
 }
 .navbar ul{
     display: flex;
@@ -89,4 +91,17 @@ td, th {
   border: 1px solid var(--primary-color);
   padding: 0.5rem;
   text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+  .info_card, .content_card, .schedule_card {
+    padding: 1rem;
+  }
+  .info_card img {
+    max-width: 150px;
+  }
+  td, th {
+    font-size: 14px;
+  }
+  
 }

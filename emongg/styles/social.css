@@ -14,6 +14,13 @@
     box-sizing: border-box;
     list-style-type: none;
 }
+#page-title{
+    display: flex;
+    justify-content:center;
+    font-size: 2rem;
+    color: var(--primary-color);
+    padding: 10px 0;
+}
 
 #course-title{
     display: flex;
@@ -37,4 +44,29 @@
   color: white;
   border-radius: 10px;
   transform: scale(1.05);
+}
+h2{
+  display: flex;
+  justify-content: center;
+}
+
+div{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.social-link{
+  display: grid;
+  justify-items: center;
+}
+.social-link img{
+  max-width: 200px;
+  border-radius: 50%;
+  border: 5px solid var(--primary-color);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.social-link img:hover {
+  transform: scale(1.6);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
