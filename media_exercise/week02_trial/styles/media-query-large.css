@@ -1,17 +1,7 @@
 @media screen and (min-width: 500px){
-    :root{
-    --background-color: #000; /* Changes background color for large screens */
-    --text-color: #fff; /* Changes text color for large screens */
+header{
+    background-color: #000;
+    color: #fff; 
 }
-    header{
-        background-color: var(--background-color);
-        color: var(--text-color);
-    }
-
-    main{
-        display: grid;
-        grid-template-columns: 1fr 1fr; /* Adjusts to 2 columns for larger screens */
-        gap: 1rem; /* Adds space between grid items */
-    }
 
 }

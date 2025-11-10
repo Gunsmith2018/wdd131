@@ -1,6 +1,7 @@
 const DAYS = 6;
 const LIMIT = 30;
-let studentReport = [11, 42, 33, 64, 29, 37, 44];
+let  studentReport = [11, 42, 33, 64, 29, 37, 44];
+
 for (let i = 0; i < studentReport.length; i++) {
 
     if (studentReport[i] < LIMIT) {
@@ -15,3 +16,8 @@ while (i < studentReport.length) {
     }
     i++;
 }
+
+studentReport.forEach(entry => {   
+    if (entry < LIMIT) {
+        console.log(entry);
+    } });
