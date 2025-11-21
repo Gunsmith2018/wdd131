@@ -28,26 +28,64 @@ header{
     margin: 20px 0;
 }
 .responsive-image {
-    width: 100%;
-    text-align: center;  /* Simple centering */
-    margin: 20px 0;
+    display: flex;
+    justify-content: center;
 }
 
-.responsive-image img {
-    max-width: 100%;  /* Responsive - fills container */
-    width: 600px;     /* Set desired size */
-    height: auto;     /* Maintains aspect ratio */
-    display: block;   /* Removes inline spacing */
-    margin: 0 auto;   /* Centers the image */
+.responsive-image img { /* Deals with the the main image*/
+    width: 1350px;     /* Set desired size */
+    height: auto;
+    position: relative;
+    display: inlineblock;
+}
+.data-table {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.9); /* semi-transparent background */
+    border: 1px solid var(--border-color);
+    padding: 10px;
+    font-family: var(--body-font);
+    color: var(--text-color);
+    top: 10px;
+    left: 10px;
+    margin:50px;
+    padding: 50px;
 }
 
-main {
-    display: grid;
-    grid-template-columns: 1fr;  /* Single column on mobile */
-    gap: 1.5rem;
-    padding: 1rem;
-    max-width: 1200px;
-    margin: 0 auto;
+.weather-table {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.9); /* semi-transparent background */
+    border: 1px solid var(--border-color);
+    padding: 10px;
+    font-family: var(--body-font);
+    color: var(--text-color);
+    bottom: 10px;
+    right: 10px;
+    margin:50px;
+    padding: 50px;
+}
+
+footer {/*Use this for dealing with the footers from now on*/
+ display: flex;             
+  justify-content: center;    
+  align-items: center;      
+  flex-direction: column;     
 }
 
 
+/* Instead of using two css for desktop then to mobile view, I have seen its better to have 1 file with all that code
+below is the media tool
+*/
+
+@media (min-width: 600px) {
+  main {
+
+  }
+    main h1{
+
+  }
+
+
+
+
+  
+}

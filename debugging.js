@@ -1,19 +1,7 @@
-const radiusOutput = document.getElementById('radius');
-const areaOutput = document.querySelector('#area');
+function fullName(first, last) {
+  return `${first} ${last}`;
+}
 
-let area = 0;
-const PI = 3.14159;
-
-let radius = 10;
-area = PI * radius * radius;
-radiusOutput.textContent = radius;
-areaOutput.textContent = area;
-
-radius = 20;
-area = PI * radius * radius;
-radiusOutput.textContent = radius;
-areaOutput.textContent = area;
-
-// Const keeps the variable from being reassigned
-// let allows reassignment
-// Capitalization will cause unwanted errors
+const fullName = (first, last) => {
+  return `${first} ${last}`;
+}
