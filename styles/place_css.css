@@ -19,6 +19,7 @@ body {
 header{
     background-color: var(--primary-color);
     
+    
 }
 #page-title {
     font-family: var(--heading-font);
@@ -77,28 +78,30 @@ below is the media tool
 */
 
 @media (min-width: 600px) {
+    header{
+    display: flex;
+    justify-content:center;
+
+  }
+    #page-title {
+    display: flex;
+    justify-content:center;
+ }
+
+
   main {
     display: grid;
     grid-template-columns: 1fr 1fr;
 
   }
-  #page-title {
-    display: grid;
-    grid-template-columns: -1/1;
-  }
 
 .responsive-image {
-    display: grid;
-
+    display: flex;
+    justify-content: center;
 
   }
-  .data-table{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-  }
 
-
-
+  .data-table
   .weather-table{
     display: grid;
     grid-template-columns: 1fr 2fr;
