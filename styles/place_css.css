@@ -78,14 +78,32 @@ below is the media tool
 
 @media (min-width: 600px) {
   main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 
   }
-    main h1{
+  #page-title {
+    display: grid;
+    grid-template-columns: -1/1;
+  }
 
+.responsive-image {
+    display: grid;
+
+
+  }
+  .data-table{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
   }
 
 
 
-
+  .weather-table{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
   
+
+
 }
