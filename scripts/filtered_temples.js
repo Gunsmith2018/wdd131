@@ -91,3 +91,23 @@ const temples = [
 
   // Add more temple objects here...
 ];
+
+
+
+const lazyTemple = document.querySelectorAll("img[data-src]"); // lazy loading
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach( entry => {
+        if(entry.isIntersecting){
+            const img = entry.target;
+            img.src = img.dataset.src;
+            img.removeAttribute('data-src');
+            img.classList.add('loaded');
+            observer.unobserve(img);
+        }
+    })
+})
+
+lazyTemple.forEach(img=>{
+    observer.observe(img);
+})

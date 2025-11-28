@@ -96,5 +96,5 @@ h2{
 }
 footer{/* handles the footer*/
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
 }
