@@ -92,6 +92,27 @@ const temples = [
   // Add more temple objects here...
 ];
 
+// For running through Temples array
+const main = document.querySelector("main");
+
+temples.forEach(temple =>{
+  const card = document.createElement("section")
+  card.classList.add("temple-card");
+
+  card.innerHTML = `
+      <h2>${temple.templeName}</h2>
+    <p><strong>Location:</strong> ${temple.location}</p>
+    <p><strong>Dedicated:</strong> ${temple.dedicated}</p>
+    <p><strong>Area:</strong> ${temple.area} sq ft</p>
+  `;
+  const img = document.createElement("img");
+  img.setAttribute("data-src", temple.imageUrl); // real image stored here
+  img.setAttribute("src", "placeholder.jpg");    // lightweight placeholder
+  img.setAttribute("alt", temple.templeName);
+
+  card.appendChild(img);
+  main.appendChild(card);
+});
 
 
 const lazyTemple = document.querySelectorAll("img[data-src]"); // lazy loading
@@ -108,6 +129,3 @@ const observer = new IntersectionObserver(entries => {
     })
 })
 
-lazyTemple.forEach(img=>{
-    observer.observe(img);
-})
