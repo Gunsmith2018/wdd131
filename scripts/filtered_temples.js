@@ -135,7 +135,7 @@ const observer = new IntersectionObserver(entries => {
 })
 
 // This variable is merging the observer and renderer into on variable to be displayed in
-const displayToHTML = lazyTemple.map(img=>{
+const displayToHTML = lazyTemple.forEach(img=>{
     observer.observe(img);
     return img;
 })
