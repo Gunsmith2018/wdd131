@@ -129,3 +129,6 @@ const observer = new IntersectionObserver(entries => {
     })
 })
 
+lazyTemple.forEach(img=>{
+    observer.observe(img);
+})
