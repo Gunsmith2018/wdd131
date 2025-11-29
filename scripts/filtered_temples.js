@@ -1,11 +1,12 @@
-const hamButton = document.querySelector("#menu");
-const navLinks = document.querySelector(".navbar ul");
+//---Hamburger menu-------------------------------//
+  const hamButton = document.querySelector("#menu");
+  const navLinks = document.querySelector(".navbar ul");
 
-hamButton.addEventListener("click", () => {
+  hamButton.addEventListener("click", () => {
   navLinks.classList.toggle("open");
-
+// -------------------------------------//
 });
-
+// temples Array
 const temples = [
   {
     templeName: "Aba Nigeria",
@@ -92,7 +93,10 @@ const temples = [
   // Add more temple objects here...
 ];
 
-// For running through Temples array
+
+// I could switch these to be functions and just call each function
+
+// For running through Temples array ------------------------//
 const main = document.querySelector("main");
 
 temples.forEach(temple =>{
@@ -115,7 +119,7 @@ temples.forEach(temple =>{
   main.appendChild(card);
 });
 
-
+//This gets the observer running
 const lazyTemple = document.querySelectorAll("img[data-src]"); // lazy loading
 
 const observer = new IntersectionObserver(entries => {
@@ -129,7 +133,9 @@ const observer = new IntersectionObserver(entries => {
         }
     })
 })
-displayToHTML = lazyTemple.map(img=>{
+
+// This variable is merging the observer and renderer into on variable to be displayed in
+const displayToHTML = lazyTemple.map(img=>{
     observer.observe(img);
     return img;
 })
