@@ -99,8 +99,9 @@ temples.forEach(temple =>{
   const card = document.createElement("section")
   card.classList.add("temple-card");
 
+
   card.innerHTML = `
-      <h2>${temple.templeName}</h2>
+    <h2>${temple.templeName}</h2>
     <p><strong>Location:</strong> ${temple.location}</p>
     <p><strong>Dedicated:</strong> ${temple.dedicated}</p>
     <p><strong>Area:</strong> ${temple.area} sq ft</p>
@@ -127,5 +128,9 @@ const observer = new IntersectionObserver(entries => {
             observer.unobserve(img);
         }
     })
+})
+displayToHTML = lazyTemple.map(img=>{
+    observer.observe(img);
+    return img;
 })
 
