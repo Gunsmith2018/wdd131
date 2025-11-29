@@ -112,7 +112,7 @@ temples.forEach(temple =>{
   `;
   const img = document.createElement("img");
   img.setAttribute("data-src", temple.imageUrl); // real image stored here
-  img.setAttribute("src", "placeholder.jpg");    // lightweight placeholder
+
   img.setAttribute("alt", temple.templeName);
 
   card.appendChild(img);

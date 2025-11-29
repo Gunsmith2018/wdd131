@@ -85,15 +85,19 @@ main{ /*Handles the main content*/
     width: 100%; /* Fixed: was 100px, should be 100% */
     max-width: 800px; /* or any value you prefer */
     margin: auto;
+    
 }
 h2{
     display: grid;
     grid-column: 1/-1;
     justify-self: center;
 }
-.temple img{
+img{
+    display: flex;
+    justify-content: center;
     max-width: 200px;
 }
+
 footer{/* handles the footer*/
     display: flex;
     justify-content: flex-end;
