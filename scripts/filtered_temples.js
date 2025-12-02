@@ -1,3 +1,12 @@
+//---Hamburger menu-------------------------------//
+  const hamButton = document.querySelector("#menu");
+  const navLinks = document.querySelector(".navbar ul");
+
+  hamButton.addEventListener("click", () => {
+  navLinks.classList.toggle("open");
+// -------------------------------------//
+});
+// temples Array
 const temples = [
   {
     templeName: "Aba Nigeria",
@@ -79,5 +88,55 @@ const temples = [
     imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/osaka-japan-temple/osaka-japan-temple-65252.jpg"
     
   }
+
+
+  // Add more temple objects here...
 ];
-console.log(temples)
+
+
+// I could switch these to be functions and just call each function
+
+// For running through Temples array ------------------------//
+const main = document.querySelector("main");
+
+temples.forEach(temple =>{
+  const card = document.createElement("section")
+  card.classList.add("temple-card");
+
+
+  card.innerHTML = `
+    <h2>${temple.templeName}</h2>
+    <p><strong>Location:</strong> ${temple.location}</p>
+    <p><strong>Dedicated:</strong> ${temple.dedicated}</p>
+    <p><strong>Area:</strong> ${temple.area} sq ft</p>
+  `;
+  const img = document.createElement("img");
+  img.setAttribute("data-src", temple.imageUrl); // real image stored here
+
+  img.setAttribute("alt", temple.templeName);
+
+  card.appendChild(img);
+  main.appendChild(card);
+});
+
+//This gets the observer running
+const lazyTemple = document.querySelectorAll("img[data-src]"); // lazy loading
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach( entry => {
+        if(entry.isIntersecting){
+            const img = entry.target;
+            img.src = img.dataset.src;
+            img.removeAttribute('data-src');
+            img.classList.add('loaded');
+            observer.unobserve(img);
+        }
+    })
+})
+
+// This variable is merging the observer and renderer into on variable to be displayed in
+const displayToHTML = lazyTemple.forEach(img=>{
+    observer.observe(img);
+    return img;
+})
+
