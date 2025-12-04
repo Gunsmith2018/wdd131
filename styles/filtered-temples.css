@@ -102,3 +102,7 @@ footer{/* handles the footer*/
     display: flex;
     justify-content: flex-end;
 }
+
+footer img {
+  max-width: 200px;
+}

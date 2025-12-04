@@ -99,3 +99,6 @@ footer{
     display: flex;
     justify-content:center;
 }
+footer img {
+  max-width: 50;
+}
