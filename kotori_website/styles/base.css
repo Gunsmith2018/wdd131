@@ -70,6 +70,7 @@
     justify-content: center;
     border: 3px solid var(--primary-color);
     padding: 0.5rem;
+    
 }
 
 .media-links {
@@ -86,6 +87,7 @@
     text-align:center;
     border: 3px solid var(--primary-color);
     padding: 0.5rem;
+    max-width: 200px;
 }
 .spotify{
     display: grid;
@@ -93,6 +95,7 @@
     text-align:center;
     border: 3px solid var(--primary-color);
     padding: 0.5rem;
+    max-width: 200px;
 }
 
 footer{
