@@ -1,11 +1,4 @@
-//---Hamburger menu-------------------------------//
-  const hamButton = document.querySelector("#menu");
-  const navLinks = document.querySelector(".navbar ul");
 
-  hamButton.addEventListener("click", () => {
-  navLinks.classList.toggle("open");
-// -------------------------------------//
-});
 // Fan Arts Array
 const fanArts = [
     {
@@ -63,15 +56,15 @@ fanArts.forEach(art =>{
   const card = document.createElement("section")
   card.classList.add("art-card");
 
-  // Title
-  const title = document.createElement("h2");
-  title.textContent = art.creator;
+  card.innerHTML = `
+    <h2>${art.creator}</h2>
+  `;
     // Image
   const img = document.createElement("img");
   img.setAttribute("data-src", art.imageUrl); // real image stored here
   img.setAttribute("alt", art.creator);
     // Assemble
-  card.append(title, img);
+  card.appendChild(img);
   main.appendChild(card);
 });
 
@@ -89,6 +82,7 @@ const observer = new IntersectionObserver(entries => {
         }
     })
 })
-lazyArt.forEach(img => observer.observe(img));
-
-
+const displayToHTML = lazyArt.forEach(img=>{
+    observer.observe(img);
+    return img;
+})

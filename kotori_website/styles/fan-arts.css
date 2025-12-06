@@ -23,11 +23,16 @@
     color: var(--primary-color);
     padding: 10px 0;
 }
+/* small view navigation */
 
+/*Navbar links*/
 .navbar ul{
     display: flex;
     justify-content: space-around;
 
+}
+.navbar ul.open{
+    display:flex;
 }
 .navbar ul li a {
   color: var(--primary-color);
@@ -44,14 +49,12 @@
 }
 
 main{ /*Handles the main content*/
-    display: grid;
-    grid-template-columns: 1fr; /* or however many columns you want */
-    gap: 20px;
-    width: 100%; /* Fixed: was 100px, should be 100% */
-    max-width: 800px; /* or any value you prefer */
-    margin: auto;
+    display:flex;
+    justify-content: center;
+    max-width:500px;
     
 }
+
 h2{
     display: grid;
     grid-column: 1/-1;
