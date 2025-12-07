@@ -15,39 +15,58 @@
     box-sizing: border-box;
     list-style-type: none;
 }
-
-#page-title{
-    display: flex;
-    justify-content:center;
-    font-size: 2rem;
-    color: var(--primary-color);
-    padding: 10px 0;
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    color:var(--primary-color)
 }
-/* small view navigation */
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
 
-/*Navbar links*/
-.navbar ul{
-    display: flex;
-    justify-content: space-around;
-
+    position: absolute; top: 0; right: 0;
+    cursor: pointer;
 }
-.navbar ul.open{
-    display:flex;
+
+#menu::before {
+    content: "☰";
+    position: absolute;
+    top:0;
+    right:0;
+}
+
+#menu.open::before {
+    content: "✖";
 }
 .navbar ul li a {
-  color: var(--primary-color);
+  color: var(--paragraph-text);
   text-decoration: none;
-  padding: 0.5rem 1rem; 
+  padding: 0.5rem 1rem;
   transition: background 0.3s, color 0.3s;
+}
+.navbar ul{
+    display: none;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    position: absolute;
+    top: 2.5rem;
+    right: 1rem;
+    width: 150px;
+    border-radius: 8px;
+    z-index: 100;
+}
+
+.navbar ul.open {
+  display: flex;
 }
 
 .navbar ul li a:hover {
-  background: var(--secondary-color);
-  color: white;
-  border-radius: 10px;
-  transform: scale(1.05);
+  background: var(--box-color); /* Now properly uses the color */
+  color: #fdfeff;
+  border-radius: 4px;
 }
-
 main{ /*Handles the main content*/
     display: grid;
     grid-template-columns: 1fr; /* or however many columns you want */
