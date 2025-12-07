@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+
+}
+h1{
+    display: flex;
+    justify-content: center;
+}
+main{
+    display:flex;
+
+}
+p{
+    display:flex;
+    justify-content: center;
+    
+}
+main img{
+    display: flex;
+    justify-content: flex-end;
+    max-width:200px;
+    display: block;
+}
