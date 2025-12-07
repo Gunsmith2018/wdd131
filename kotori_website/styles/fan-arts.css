@@ -49,18 +49,21 @@
 }
 
 main{ /*Handles the main content*/
-    display:flex;
-    justify-content: center;
-    max-width:500px;
+    display: grid;
+    grid-template-columns: 1fr; /* or however many columns you want */
+    gap: 20px;
+    width: 100%; /* Fixed: was 100px, should be 100% */
+    max-width: 800px; /* or any value you prefer */
+    margin: auto;
     
 }
 
-h2{
+ h2{
     display: grid;
     grid-column: 1/-1;
     justify-self: center;
 }
-img{
+ img{
     display: flex;
     justify-content: center;
     max-width: 200px;
@@ -73,4 +76,40 @@ footer{/* handles the footer*/
 
 footer img {
   max-width: 200px;
+}
+
+@media screen and (min-width: 600px) {
+:root {
+  --primary-color: #232946;      /* Changes primary color */
+  --background-color: #282c34;   /* Changes background color */
+  --footer-color: #e9e1e1;       /* Changes footer color */
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* or however many columns you want */
+    grid-template-rows: repeat(3, auto);
+    gap: 20px;
+    width: 100%;
+    max-width: 900px; /* or any value you prefer */
+    margin: auto;
+}
+h1{
+    grid-column: 1/-1;
+}
+  #menu {
+    display: none;
+  }
+  .navbar ul {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-between;
+    position: static;
+    background: none;
+    width: auto;
+    padding: 1rem;
+  }
+footer{
+    display: flex;
+    justify-content: center;
+}
 }
