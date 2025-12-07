@@ -2,8 +2,8 @@
 
 const streamLinks = [
     {
-        website: Twitch,
-        imageUrl:"https://cdn.discordapp.com/attachments/1445983484043853825/1445983636334837791/kotori_b-day_w.png?ex=6935a073&is=69344ef3&hm=733b447f90cbcc320de6667b8d4375628d5282507f2a8339271b0a07e7755e92"
+    website: "Twitch",
+    imageUrl:"https://cdn.discordapp.com/attachments/1445983484043853825/1445983636334837791/kotori_b-day_w.png?ex=6935a073&is=69344ef3&hm=733b447f90cbcc320de6667b8d4375628d5282507f2a8339271b0a07e7755e92"
     }
 ]
 
