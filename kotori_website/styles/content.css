@@ -27,7 +27,7 @@ body{
     font-size: 1.5rem;
     border: 0;
     background: none;
-    color: var(--primary-color);
+    color: var(--background-color);
     position: absolute; top: 0; right: 0;
     cursor: pointer;
 }
@@ -86,6 +86,7 @@ footer{
 }
 
 @media screen and (min-width: 600px) {
+
     main {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -93,10 +94,9 @@ footer{
         gap: 20px;
         width: 100%;
         max-width: 900px;
-
         margin: auto;
     }
-    
+
     h1 {
         grid-column: 1/-1;
     }
