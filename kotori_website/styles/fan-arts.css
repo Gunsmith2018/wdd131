@@ -67,15 +67,11 @@
 }
 
 main {
-    /*Handles the main content*/
     display: grid;
     grid-template-columns: 1fr;
-    /* or however many columns you want */
     gap: 20px;
     width: 100%;
-    /* Fixed: was 100px, should be 100% */
     max-width: 800px;
-    /* or any value you prefer */
     margin: auto;
 
 }
