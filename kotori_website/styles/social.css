@@ -44,8 +44,8 @@
 
 main {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
-    grid-template-rows: repeat(2, auto);   /* 2 rows that size to content */
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, auto);   
     gap: 20px;
     width: 100%;
     max-width: 800px;
