@@ -71,6 +71,10 @@ body{
   color: #fdfeff;
   border-radius: 4px;
 }
+#page-title{
+  display:flex;
+  justify-content: center;
+}
 main {
     display: grid;
     grid-template-columns: 1fr;

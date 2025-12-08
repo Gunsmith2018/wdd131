@@ -72,12 +72,9 @@ body{
   color: #fdfeff;
   border-radius: 4px;
 }
-/*Background*/
-.background{
-  background-size: cover;
-  background-position: center;
-  width: 400px;
-  height: 50px;
+#page-title{
+  display:flex;
+  justify-content: center;
 }
 .about-section {
   display: flex;
