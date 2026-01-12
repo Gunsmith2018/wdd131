@@ -8,3 +8,20 @@ body{
     grid-template: auto 1ft auto / auto 1fr auto;
 
 }
+.navigation { 
+  display: flex;
+  align-items: center;
+  flex: 1 1 auto;
+
+ }
+
+.navigation a {
+    
+    
+    display: block;
+    color: #eee;
+    padding: 0.75rem;
+    text-decoration: none;
+    text-align: center;
+    
+} 
