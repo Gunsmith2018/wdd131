@@ -23,5 +23,64 @@ nav a {
 
 nav a:hover{
     background-color:gray;
+
+}
+
+h1{
+    display:flex;
+    justify-content:center;
+}
+
+.card{
+    display:grid;
+    grid-template-columns: auto 1fr auto/ auto 1fr auto
     
+}
+h2{
+    display: grid;
+    grid-column:1/2;
+}
+.card img{
+    display:grid;
+    grid-column:1/2;
+    padding: 20px;
+    max-width: 200px;
+}
+.card p{
+    display:grid;
+    grid-column: 2/1;
+    padding: 20px;
+    max-width: 200px;
+}
+.card ul{
+    display:grid;
+    padding: 20px;
+    grid-column: 3/4;
+}
+
+.card2{
+    display:grid;
+    grid-template-columns: auto 1fr auto/ auto 1fr auto
+    
+}
+.card2 h2{
+    display: grid;
+    grid-column:3/4;
+}
+.card2 img{
+    display:grid;
+    grid-column:3/4;
+    padding: 20px;
+    max-width: 200px;
+}
+.card2 p{
+    display:grid;
+    grid-column: 2/1;
+    padding: 20px;
+    max-width: 200px;
+}
+.card2 ul{
+    display:grid;
+    padding: 20px;
+    grid-column: 3/4;
 }
