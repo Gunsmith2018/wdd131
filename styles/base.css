@@ -5,6 +5,12 @@
     padding:0;
 
 }
+body{
+    font-family:"Roboto", sans-serif;
+}
+h1, h2, h3, h4 {
+    font-family: "Gravitas One", serif;
+}
 header{
     background: gray;
     color: white;
@@ -21,12 +27,12 @@ nav{
     display:flex;
     justify-content: space-around;
     text-decoration: none;
-    background: rgb(49, 108, 218);
+    background: yellow;
     border-radius: .5rem;
 }
 nav a {
     text-decoration: none;
-    color:white;
+    color:#050524;
     display: block;
     padding: .5rem;
 }
