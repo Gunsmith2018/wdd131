@@ -3,13 +3,12 @@ const input = document.querySelector('#favchap');
 const button = document.querySelector('button');
 const list = document.querySelector('#list'); // THis will link to an HTML tag
 
-const li = document.createElement('li');
-const deleteButton = document.createElement('button');
         
 button.addEventListener('click', function () {
-    if (input.value = '') {
+    if (input.value != '') {
 
-
+        const li = document.createElement('li');
+        const deleteButton = document.createElement('button');
         li.textContent = inputvalue;
 
         deleteButton.textcontent = '❌';
