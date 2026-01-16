@@ -5,7 +5,7 @@ const list = document.querySelector('#list'); // THis will link to an HTML tag
 
         
 button.addEventListener('click', function () {
-    if (input.value != '') {
+    if (input.value.trim !== '') {
 
         const li = document.createElement('li');
         const deleteButton = document.createElement('button');
