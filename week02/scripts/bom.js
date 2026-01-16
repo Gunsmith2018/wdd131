@@ -1,19 +1,19 @@
 
 
-button.addEventListener('click'() => {
+button.addEventListener('click' function () {
     if (input.value = '') {
-    const input = document.querySelector('#favchap');
-    const button = document.querySelector('button');
-    const list = document.querySelector('____________'); // THis will link to an HTML tag
+        const input = document.querySelector('#favchap');
+        const button = document.querySelector('button');
+        const list = document.querySelector('____________'); // THis will link to an HTML tag
 
-    const li = document.createElement('li');
-    const deleteButton = document.createElement('button');
+        const li = document.createElement('li');
+        const deleteButton = document.createElement('button');
 
-    li.textContent = inputvalue;
+        li.textContent = inputvalue;
 
-    deleteButton.textcontent = '❌';
+        deleteButton.textcontent = '❌';
 
-    li.append(deleteButton);
-    list.append(li);
+        li.append(deleteButton);
+        list.append(li);
     }
-}
+})
