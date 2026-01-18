@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding:0;
+
+}
+body{
+    font-family:"Roboto", sans-serif;
+}
+h1, h2, h3, h4 {
+    font-family: "Gravitas One", serif;
+}
+header{
+
+    color: #000000;
+    padding: 1rem;
+    text-align: center;
+    border-radius: .5rem
+
+}
+#page-title{
+    font-size: 2rem;
+    display: block;
+}
+
+nav{
+    text-decoration: none;
+    background: yellow;
+    border-radius: .5rem;
+}
+
+nav li{
+    display:flex;
+    justify-content:center;
+}
+
+nav a{
+    width: 100%;
+}
+
+nav a:hover{
+    background:gray;
+}
+
