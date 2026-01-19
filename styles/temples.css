@@ -21,24 +21,39 @@ header{
     font-size: 2rem;
     display: block;
 }
+#menu::before{ /*Burger menu for mobile view*/
+    content: "≡";
+}
 
 nav{
+    background-color: yellow;
+}
+.navigation{
+    list-style: none;
+    margin: 0 auto;
+	max-width: 760px;
+}
+.navigation li{
+    display:none;
+}
+
+.navigation a{
+    display:block;
+    text-align:center;
     text-decoration: none;
-    background: yellow;
-    border-radius: .5rem;
-}
-
-nav li{
-    display:flex;
-    justify-content:center;
-}
-
-nav a{
     width: 100%;
+    color: blue;
 }
 
-nav a:hover{
+.navigation a:hover, 
+.navigation:active{
     background:gray;
+}
+.show li{
+    display: block;
+}
+#menu.show::before{
+    content:"X";
 }
 
 main{
@@ -64,6 +79,9 @@ figure img{
     align-items: center;
     text-align: center;
 
+}
+figcaption{
+    padding:10px;
 }
 
 
