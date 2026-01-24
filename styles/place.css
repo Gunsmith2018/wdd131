@@ -1,0 +1,38 @@
+:root{
+    --primary-color: red;
+}
+
+*{
+    margin: 0;
+    padding:0;
+
+}
+body{
+    font-family:"Roboto", sans-serif;
+}
+h1, h2, h3, h4 {
+    font-family: "Gravitas One", serif;
+}
+#page-title{
+    font-family: "Gravitas One", serif;
+}
+header{
+
+    color: #000000;
+    padding: 1rem;
+    text-align: center;
+    border-radius: .5rem
+}
+
+
+main{
+    display: flex;
+
+}
+
+.background img{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+
+}
