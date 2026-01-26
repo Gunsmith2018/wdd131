@@ -10,12 +10,7 @@
 body{
     font-family:"Roboto", sans-serif;
 }
-h1, h2, h3, h4 {
-    font-family: "Gravitas One", serif;
-}
-#page-title{
-    font-family: "Gravitas One", serif;
-}
+
 body{
     display: flex;
     flex-direction: column;
