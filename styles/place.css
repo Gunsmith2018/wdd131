@@ -23,13 +23,16 @@ header{
 }
 
 .background{
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.background-img{
-    display: block;
+
+.data{
+    display: flex;
+    justify-content: center;
+}
+h2{
+    display: flex;
     
 }
-
-
-
-
