@@ -1,13 +1,24 @@
-@media only screen and (min-width: 40em) {
+@media only screen and (min-width: 1000px) {
 
+.background{
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
 
+.data{
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    border: 2px solid var(--green);
+}
 
-
-
-
-
-
-
+.weather{
+    position: absolute;
+    bottom: 200px;
+    right: 40px;
+    border: 2px solid var(--green);
+}
 
     
 }
