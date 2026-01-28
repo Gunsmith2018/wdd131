@@ -31,7 +31,7 @@ header{
     padding: 1rem;
 }
 
-.background{
+picture{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,10 +69,7 @@ header{
 }
 
 
-h2{
-    display: flex;
-    align-items: center;
-}
+
 
 footer{
     display: flex;
