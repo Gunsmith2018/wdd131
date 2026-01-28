@@ -12,6 +12,13 @@
 body{
     font-family:"Roboto", sans-serif;
 }
+header{
+    background: var(--green);
+
+}
+#page-title{
+    color: var(--white);
+}
 
 body{
     display: flex;
