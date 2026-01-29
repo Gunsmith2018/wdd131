@@ -44,7 +44,7 @@ picture{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: solid var(--white);
+    background-color: 1px solid var(--white);
     border: 2px solid var(--green);
     padding: 2rem;
     box-shadow: 0 0 30px black;
