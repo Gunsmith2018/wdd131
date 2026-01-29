@@ -30,17 +30,14 @@ img{
 }
 
 
-
-
 picture{
     display: flex;
     justify-content: center;
     align-items: center;
-    
-
+    position: relative;
 }
 
-.data{
+.data, .data2{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -49,20 +46,23 @@ picture{
     padding: 2rem;
     box-shadow: 0 0 30px black;
 }
-.data h2{
+.data h2, .data2 h2{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 2rem;
 }
+
+
+.data td, .data2 td{
+    padding: .2rem;
+}
+
+
 .weather-icon img{
     padding: 2rem;
     width:60px;
 }
-.data td{
-    padding: .2rem;
-}
-
 
 footer{
 

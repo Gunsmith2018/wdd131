@@ -4,19 +4,30 @@ main{
     display: grid;
     grid-template-columns: 1fr  1fr  1fr  1fr ;
     grid-template-rows:  auto   1fr;
-
-
-
 }
 picture{
     grid-column: 1/5;
+    grid-row: 1/2;
+}
+.data, .data2{
+    z-index: 2;
+    position: relative;
 }
 
 .data{
-    grid-column: 1/4;
-
+    grid-column: 1/2;
     border: 2px solid var(--green);
 }
 
+.data2{
+    grid-column: 4/5;
+}
+.weather-icon img{
+    display: none;
+}
+
+.data2 h2::after{
+    content: "🌧️"
+}
     
 }
