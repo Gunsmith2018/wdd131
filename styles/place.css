@@ -10,12 +10,15 @@
 }
 body{
     font-family:"Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 header{
     background: var(--green);
-
+    text-align: center;
+    padding: 1rem;
 }
-#page-title{
+h1{
     color: var(--white);
 }
 main{
@@ -25,16 +28,9 @@ img{
     width: 100%;
     height: auto;
 }
-body{
-    display: flex;
-    flex-direction: column;
-}
 
-header{
-    text-align: center;
-    color: #000000;
-    padding: 1rem;
-}
+
+
 
 picture{
     display: flex;
