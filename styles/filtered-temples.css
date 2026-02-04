@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding:0;
+
+}
+body{
+    font-family:"Roboto", sans-serif;
+}
+h1, h2, h3, h4 {
+    font-family: "Gravitas One", serif;
+}
+header{
+
+    color: #000000;
+    padding: 1rem;
+    text-align: center;
+    border-radius: .5rem
+
+}
+#page-title{
+    font-size: 2rem;
+    display: block;
+}
+#menu::before{ /*Burger menu for mobile view*/
+    content: "≡";
+}
+
+nav{
+    background-color: yellow;
+}
+.navigation{
+    list-style: none;
+    margin: 0 auto;
+	max-width: 760px;
+}
+.navigation li{
+    display:none;
+}
+
+.navigation a{
+    display:flex;
+    justify-content:space-around;
+    text-decoration: none;
+    width: 100%;
+    color: blue;
+}
+
+.navigation a:hover, 
+.navigation:active{
+    background:gray;
+}
+.show li{
+    display: block;
+}
+#menu.show::before{
+    content:"X";
+}
+
+main{
+    display:grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1{
+    display:grid;
+    grid-column:-1/1;
+    text-align: center;
+
+}
+
+figure img{
+    grid-column: 1/2
+}
+figcaption{
+    padding:10px;
+}
+
+
+footer{
+    display: flex;
+    justify-content: center;
+}
