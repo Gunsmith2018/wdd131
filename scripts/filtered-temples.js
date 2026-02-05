@@ -101,6 +101,7 @@ function templeFiltering(criteria) {
 
 }
 
+
 // ======================= Rendering Temple Images=======================//
 function renderTemples(list) {
     const main = document.querySelector("main");
@@ -138,13 +139,22 @@ function renderTemples(list) {
     });
 }
 
-renderTemples(temples); // Should deploy to Home Tab
-renderTemples(templeFiltering("old"));// Should deploy to Old tab
-renderTemples(templeFiltering("new"));// Should deploy to New tab
-renderTemples(templeFiltering("small"));//  Should deploy to Small tab
-renderTemples(templeFiltering("large"));// Should deploy to Large tab
-
-
+// ======================== Adding a Click Method =================//
+document.querySelector("#home").addEventListener('click', () => {
+    renderTemples(temples);
+})
+document.querySelector("#old").addEventListener('click', () => {
+    renderTemples(templeFiltering("old"));
+})
+document.querySelector("#new").addEventListener('click', () => {
+    renderTemples(templeFiltering("new"));
+})
+document.querySelector("#small").addEventListener('click', () => {
+    renderTemples(templeFiltering("small"));
+})
+document.querySelector("#large").addEventListener('click', () => {
+    renderTemples(templeFiltering("large"));
+})
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -166,3 +176,5 @@ document.addEventListener('DOMContentLoaded', () => {
         imageObserver.observe(img);
     });
 });
+
+renderTemples(temples);
