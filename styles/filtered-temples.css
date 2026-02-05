@@ -1,7 +1,8 @@
 :root{
-    --blue: blue;
-    --yellow: yellow;
-    --gray: gray;
+    --blue: #0000FF;
+    --yellow: #FFFF00;
+    --gray: #808080;
+    --black: #000000;
 }
 *{
     margin: 0;
@@ -16,7 +17,7 @@ h1, h2, h3, h4 {
 }
 header{
 
-    color: #000000;
+    color: 1px solid var(--black);
     padding: 1rem;
     text-align: center;
     border-radius: .5rem
@@ -78,6 +79,7 @@ h1{
 
 figure img{
     grid-column: 1/2;
+    max-width: 500px;
     padding: 10px;
     
 }
