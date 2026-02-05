@@ -64,6 +64,31 @@ const temples = [
         imageUrl:
             "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
     },
+    {
+        templeName: "Tokyo Japan",
+        location: "Tokyo, Japan",
+        dedicated: "1980, October, 27-29",
+        area: 53997,
+        imageUrl:
+            "https://churchofjesuschristtemples.org/assets/img/temples/tokyo-japan-temple/tokyo-japan-temple-26340-main.jpg"
+    },
+    {
+        templeName: "Manhattan New York",
+        location: "New York, United States",
+        dedicated: "2002, September, 23",
+        area: 20630,
+        imageUrl:
+            "https://churchofjesuschristtemples.org/assets/img/temples/manhattan-new-york-temple/manhattan-new-york-temple-40080-main.jpg"
+    },
+    {
+        templeName: "McAllen Texas",
+        location: "McAllen, Texas",
+        dedicated: "2023, October, 8",
+        area: 27897,
+        imageUrl:
+            "https://churchofjesuschristtemples.org/assets/img/temples/mcallen-texas-temple/mcallen-texas-temple-39905-main.jpg"
+    },
+    
     // Add more temple objects here...
 ];
 // ======================= Filtering Temple images=======================//
