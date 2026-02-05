@@ -2,7 +2,9 @@
 	h1 {
 		font-size: 2rem;
 	}
-
+	.navigation{
+		flex-direction: row;
+	}
 	.navigation li {
 		display: block; /* change state in small view */
 		flex: 1 1 100%;
