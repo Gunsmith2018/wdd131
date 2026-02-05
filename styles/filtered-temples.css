@@ -1,3 +1,8 @@
+:root{
+    --blue: blue;
+    --yellow: yellow;
+    --gray: gray;
+}
 *{
     margin: 0;
     padding:0;
@@ -26,7 +31,7 @@ header{
 }
 
 nav{
-    background-color: yellow;
+    background-color: var(--yellow);
 }
 .navigation{
     list-style: none;
@@ -42,12 +47,12 @@ nav{
     justify-content:space-around;
     text-decoration: none;
     width: 100%;
-    color: blue;
+    color: var(--blue);
 }
 
 .navigation a:hover, 
 .navigation:active{
-    background:gray;
+    background: var(--gray);
 }
 .show li{
     display: block;
@@ -72,10 +77,15 @@ h1{
 }
 
 figure img{
-    grid-column: 1/2
+    grid-column: 1/2;
+    padding: 10px;
+    
 }
 figcaption{
     padding:10px;
+    border: 2px solid var(--gray);
+    max-width: 200px;
+    margin: 0 auto;
 }
 
 
