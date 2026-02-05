@@ -34,7 +34,7 @@ nav{
     background-color: var(--yellow);
 }
 .navigation{
-    display:flex;
+  
     flex-direction: column;
     justify-content:space-around;
     list-style: none;
@@ -42,9 +42,7 @@ nav{
 	max-width: 760px;
 }
 .navigation li{
-    
     display:none;
-    
 }
 
 .navigation a{

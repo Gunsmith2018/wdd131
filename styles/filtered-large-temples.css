@@ -3,7 +3,7 @@
 		font-size: 2rem;
 	}
 	.navigation {
-		display: flex;
+		display:flex;
 		flex-direction: row;
 	}
 	.navigation li {
