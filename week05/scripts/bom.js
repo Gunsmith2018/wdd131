@@ -3,7 +3,8 @@ const input = document.querySelector('#favchap');
 const button = document.querySelector('button');
 const list = document.querySelector('#list'); // THis will link to an HTML tag
 
-        
+
+
 button.addEventListener('click', () => {
     if (input.value != '') {// make sure the input is not empty
 
@@ -20,9 +21,9 @@ button.addEventListener('click', () => {
     }
 })
 
-
-
-
+const getChapterList = () => {
+    return JSON.parse(localStorage.getItem('myFavBOMList')); // calls/ retreves the saved bom list
+}
 let chaptersArray = getChapterList() || [];
 
 chaptersArray.forEach(chapter => {
@@ -46,9 +47,7 @@ const displayList = (item) => {
 const setChapterList = () => {
     localStorage.setItem('myFavBOMList', JSON.stringify(chaptersArray)); // Setting to local storage 
 }
-const getChapterList = () => {
-    return JSON.parse(localStorage.getItem('myFavBOMList')); // calls/ retreves the saved bom list
-}
+
 deleteChapter = (chapter) => {
     chapter = chapter.slice(0, chapter.length - 1); // cuts off the last character
     chaptersArray = chaptersArray.filter(item => item !== chapter); // removes a certain chapter
