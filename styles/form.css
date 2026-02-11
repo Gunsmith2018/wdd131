@@ -1,0 +1,39 @@
+root{
+    ----white: #ffffff;
+    --black: #000000;
+    --dark-gray: #333333;
+    --slate-gray: 	#708090;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+
+}
+form{
+    grid-column:3/4;
+    padding: 10px;
+}
+
+.stars{
+    display: flex;
+    padding: 10px;
+}
+.feature{
+    max-width: 300px;
+}
+
+.review, .username, .submit{
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+    padding: 10px;
+}
+footer {
+
+    justify-content: center;
+    background: var(--red);
+    color: var(--white);
+    padding: .2rem;
+    text-align: center;
+}
