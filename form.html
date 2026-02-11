@@ -30,26 +30,27 @@
                     <label for="onestar">&star;</label>
                 </div>
                 <div>
-                    <input type="radio" id="twostar" name="stars" value="2">
+                    <input type="radio" id="twostar" name="stars" value="2" required>
                     <label for="twostar">&star;&star;</label>
                 </div>
                 <div>
-                    <input type="radio" id="threestar" name="stars" value="3">
+                    <input type="radio" id="threestar" name="stars" value="3"required>
                     <label for="threestar">&star;&star;&star;</label>
                 </div>
                 <div>
-                    <input type="radio" id="fourstar" name="stars" value="4">
+                    <input type="radio" id="fourstar" name="stars" value="4"required>
                     <label for="fourstar">&star;&star;&star;&star;</label>
                 </div>
                 <div>
-                    <input type="radio" id="fivestar" name="stars" value="5">
+                    <input type="radio" id="fivestar" name="stars" value="5"required>
                     <label for="fivestar">&star;&star;&star;&star;&star;</label>
                 </div>
             </div>
 
-            <label>Date of Installation</label>
+            <label for="date-installed">Date of Installation</label>
             <input type="date" id="date-instaled" name="date-installed" required><!-- Allowing the User to pick a Date -->
 
+                
                 <fieldset class="feature">
                     <legend>Features (check all that apply)</legend>
                     
@@ -74,7 +75,7 @@
 
             <div class="username">
                 <label>Your Name(optional)</label>
-                <input type="text" id="username" name="username"> <!-- Allows the User to input their username if desired-->
+                <input type="text" id="username" name="username" value="optional"> <!-- Allows the User to input their username if desired-->
             </div>
 
             <div class="submit">
