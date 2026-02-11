@@ -8,7 +8,6 @@ root{
 main{
     display: grid;
     grid-template-columns: 20% 20% 20% 20%;
-
 }
 form{
     grid-column:3/4;
@@ -30,7 +29,6 @@ form{
     padding: 10px;
 }
 footer {
-
     justify-content: center;
     background: var(--red);
     color: var(--white);
