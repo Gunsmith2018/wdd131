@@ -1,0 +1,23 @@
+h1{
+text-align: center
+}
+
+main{
+    display:flex;
+    flex-direction: column;
+    align-items: center
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul{
+    text-align: center;
+    padding: 20px;
+}
+
+li {
+    padding: 5px;
+}
