@@ -4,7 +4,10 @@ root{
     --dark-gray: #333333;
     --slate-gray: 	#708090;
 }
-
+h1{
+    display:flex;
+    justify-content: center;
+}
 main{
     display: grid;
     grid-template-columns: 20% 20% 20% 20%;
