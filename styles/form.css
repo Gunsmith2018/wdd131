@@ -1,8 +1,7 @@
-root{
-    ----white: #ffffff;
+:root{
+    --purple: #800080;
+    --white: #ffffff;
     --black: #000000;
-    --dark-gray: #333333;
-    --slate-gray: 	#708090;
 }
 h1{
     display:flex;
@@ -32,9 +31,9 @@ form{
     padding: 10px;
 }
 footer {
+    display: flex;
     justify-content: center;
-    background: var(--red);
+    background: var(--purple);
     color: var(--white);
     padding: .2rem;
-    text-align: center;
 }
