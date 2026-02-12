@@ -1,0 +1,61 @@
+ :root {
+    --background: #1A1A2E;
+    --surface: #16213E;
+    --primary-accent: #0F3460;
+    --highlight-accent: #E94560;
+    --text: #F5F5F5;
+
+ }
+
+ * {
+    margin: 0;
+    padding: 0;
+ }
+
+ body,
+ h1,
+ h2,
+ h3 {
+    background: var(--background);
+    color: var(--text);
+ }
+
+ header {
+    padding: 1rem;
+    text-align: center;
+ }
+
+ #page-title {
+    display: block;
+    font-weight: bold;
+ }
+
+
+ .navigation {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+ }
+
+ .navigation a {
+    text-decoration: none;
+    color: var(--text);
+
+ }
+
+ .navigation a:hover {
+    background: var(--primary-accent);
+    color: var(--text);
+    border-radius: 5px;
+
+ }
+
+ nav {
+    background: var(--surface);
+
+ }
+
+ footer {
+    display: flex;
+    justify-content: center;
+ }
