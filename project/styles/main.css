@@ -1,61 +1,109 @@
  :root {
-    --background: #1A1A2E;
-    --surface: #16213E;
-    --primary-accent: #0F3460;
-    --highlight-accent: #E94560;
-    --text: #F5F5F5;
+   --background: #1A1A2E;
+   --surface: #16213E;
+   --primary-accent: #0F3460;
+   --highlight-accent: #E94560;
+   --text: #F5F5F5;
 
  }
 
  * {
-    margin: 0;
-    padding: 0;
+   margin: 0;
+   padding: 0;
  }
 
  body,
  h1,
  h2,
  h3 {
-    background: var(--background);
-    color: var(--text);
+   background: var(--background);
+   color: var(--text);
  }
 
  header {
-    padding: 1rem;
-    text-align: center;
+   padding: 1rem;
+   text-align: center;
  }
 
  #page-title {
-    display: block;
-    font-weight: bold;
+   display: block;
+   font-weight: bold;
  }
 
 
  .navigation {
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
+   display: flex;
+   justify-content: space-around;
+   list-style: none;
  }
 
  .navigation a {
-    text-decoration: none;
-    color: var(--text);
-
+   text-decoration: none;
+   color: var(--text);
+   padding: 0px 20px;
+   transition: background 0.25s ease;
  }
 
  .navigation a:hover {
-    background: var(--primary-accent);
-    color: var(--text);
-    border-radius: 5px;
-
+   background: var(--primary-accent);
+   color: var(--text);
+   box-shadow: 0 0 8px var(--highlight-accent);
+   border-radius: 5px;
  }
 
  nav {
-    background: var(--surface);
-
+   background: var(--surface);
  }
+ /* Hamburger Menu*/
 
+ #menu{
+   display: none;
+   cursor: pointer;
+   
+ }
+ #menu::before{
+   content: "≡";
+   font-size: 2rem;
+   color: var(--text);
+   
+ }
+ #menu.show::before{
+   content: "❌"; 
+ }
+   /* This section will be the main content*/
+ 
+
+
+
+
+/* Footer is just a simple footer*/
  footer {
-    display: flex;
-    justify-content: center;
+   display: flex;
+   justify-content: center;
  }
+
+@media only screen and ( max-width: 40rem){
+
+   #menu{
+      display: block;
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+   }
+
+   #menu.show::before{
+      content: "❌"; 
+   }
+
+   .navigation{
+      display: none;
+      flex-direction: column;
+      gap: 1rem;
+   }
+   .navigation.show{
+      display:flex;
+   }
+
+   /* This section will be the main content*/
+
+}
