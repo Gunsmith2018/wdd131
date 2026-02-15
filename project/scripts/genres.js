@@ -10,28 +10,59 @@ hambutton.addEventListener('click', function () {
 
 
 
+// ====================== ============================//
+const genres = [{
+    title: "YouTube",
+    genre: "Action",
+    imageurl: "https://www.youtube.com"
+},
+{
+    title: "YouTube",
+    genre: "Action",
+    imageurl: "https://www.youtube.com"
+    },
+{
+    title: "YouTube",
+    genre: "Action",
+    imageurl: "https://www.youtube.com"
+}
+];
 
-const genres = [
-    "Action",
-    "Adventure",
-    "Animation",
-    "Comedy",
-    "Crime",
-    "Drama",
-    "Fantasy",
-    "Horror",
-    "Mystery",
-    "Romance",
-    "Sci-Fi",
-    "Thriller",
-]
+const main = document.querySelector('main'); // targeting the main element in html
+const nav = document.createElement('nav'); // creating a seprate nav menu that will be with in nav
+nav.classList.add('genres')
+main.appendChild(nav);
 
-displayGenres.forEach(catagories => {
-    displayList(catagories);
+// Building HTML tags and sorting genres alphebetically 
+const buildGenreTab = (genre) =>{
+    const li = document.createElement('li'); // li tags
+    const a = document.createElement('a'); // a tags
 
-    const li = document.createElement('li');
-    const a = document.createElement('a');
+    a.textContent = genre.title;
+    a.href = '#';
 
-});
+    //click function
+    a.addEventListener('click', () => {
+        main.innerHTML = '';
+        main.appendChild(nav);
+        
+        // display video info
+        const p = document.createElement('p'); // a tag
+        p.textContent = genre.title;
+
+        // handing images
+        const img = document.createElement('img');
+        img.src = genre.imageurl; // this is videos are deployed
+        img.loading = 'lazy'; // lazy loading added
+
+        // deploying to main
+        main.appendChild(p);
+        main.appendChild(img);
+    });
+
+    li.appendChild(a);
+    nav.appendChild(li);
+};
 
 
+genres.forEach(genre => buildGenreTab(genre));
