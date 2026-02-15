@@ -23,7 +23,7 @@ const genres = [{
     },
 {
     title: "YouTube",
-    genre: "Action",
+    catagory: "Action",
     imageurl: "https://www.youtube.com"
 }
 ];
@@ -38,7 +38,7 @@ const buildGenreTab = (genre) =>{
     const li = document.createElement('li'); // li tags
     const a = document.createElement('a'); // a tags
 
-    a.textContent = genre.title;
+    a.textContent = genre.catagory;
     a.href = '#';
 
     //click function
@@ -48,7 +48,7 @@ const buildGenreTab = (genre) =>{
         
         // display video info
         const p = document.createElement('p'); // a tag
-        p.textContent = genre.title;
+        p.textContent = genre.catagory;
 
         // handing images
         const img = document.createElement('img');
