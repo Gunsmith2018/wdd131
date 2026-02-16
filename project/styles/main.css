@@ -71,7 +71,44 @@
    content: "❌"; 
  }
    /* This section will be the main content*/
- 
+ .genre-row{
+  background: var(--surface);
+  margin-bottom: 2rem;
+  padding: 1 rem;
+  
+}
+.genre-row h2{
+  color: var(--text);
+  text-transform: capitalize;
+}
+
+.video-row{
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto; /* when this overflows with info, you can scroll to see the rest of it*/
+  margin-bottom: 2rem;
+  scroll-behavior: smooth;
+  
+}
+.video-row::-webkit-scrollbar{
+  height: 8px;
+}
+.video-row::-webkit-scrollbar-thumb {
+  background: var(--surface);
+  border-radius: 4px;
+}
+.video-card{
+  max-width: 200px;
+  border-radius:  8px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow .02 ease;
+
+}
+.vidoecard:hover{
+  transform: scale(1.00);
+  box-shadow: var(--highlight-accent);
+}
 
 
 
