@@ -9,8 +9,72 @@ hambutton.addEventListener('click', function () {
 
 
 const genres = [
-    {title: "proto-video", catagory: "heros-villans", imageurl: "images/proto.jpg", videourl: "videos/proto.mp4"},
-
+    {title: "proto-video", catagory: "heros-villans", imageurl: "images/demo.webp", videourl: "videos/proto.mp4"},
+    { title: "proto-video", catagory: "heros-villans", imageurl: "images/demo.webp", videourl: "videos/proto.mp4" },
+    { title: "proto-video", catagory: "heros-villans", imageurl: "images/demo.webp", videourl: "videos/proto.mp4" },
+    { title: "proto-video", catagory: "heros-villans", imageurl: "images/demo.webp", videourl: "videos/proto.mp4" },
+    { title: "proto-video", catagory: "heros-villans", imageurl: "images/demo.webp", videourl: "videos/proto.mp4" },
+    { title: "proto-video", catagory: "heros-villans", imageurl: "images/demo.webp", videourl: "videos/proto.mp4" },
+    { title: "proto-video", catagory: "heros-villans", imageurl: "images/demo.webp", videourl: "videos/proto.mp4" },
+    { title: "proto-video", catagory: "heros-villans", imageurl: "images/demo.webp", videourl: "videos/proto.mp4" },
+    
+        {title: "proto-video", catagory: "heros-villans", imageurl: "images/demo.webp", videourl: "videos/proto.mp4"},
+    { title: "proto-video", catagory: "heros-villans", imageurl: "images/demo.webp", videourl: "videos/proto.mp4" },
+    { title: "proto-video", catagory: "heros-villans", imageurl: "images/demo.webp", videourl: "videos/proto.mp4" },
+    { title: "proto-video", catagory: "heros-villans", imageurl: "images/demo.webp", videourl: "videos/proto.mp4" },
+    { title: "proto-video", catagory: "heros-villans", imageurl: "images/demo.webp", videourl: "videos/proto.mp4" },
+    { title: "proto-video", catagory: "heros-villans", imageurl: "images/demo.webp", videourl: "videos/proto.mp4" },
+    { title: "proto-video", catagory: "heros-villans", imageurl: "images/demo.webp", videourl: "videos/proto.mp4" },
+    { title: "proto-video", catagory: "heros-villans", imageurl: "images/demo.webp", videourl: "videos/proto.mp4" },
+        {title: "proto-video", catagory: "heros-villans", imageurl: "images/demo.webp", videourl: "videos/proto.mp4"},
+    { title: "proto-video", catagory: "heros-villans", imageurl: "images/demo.webp", videourl: "videos/proto.mp4" },
+    { title: "proto-video", catagory: "heros-villans", imageurl: "images/demo.webp", videourl: "videos/proto.mp4" },
+    { title: "proto-video", catagory: "heros-villans", imageurl: "images/demo.webp", videourl: "videos/proto.mp4" },
+    { title: "proto-video", catagory: "heros-villans", imageurl: "images/demo.webp", videourl: "videos/proto.mp4" },
+    { title: "proto-video", catagory: "heros-villans", imageurl: "images/demo.webp", videourl: "videos/proto.mp4" },
+    { title: "proto-video", catagory: "heros-villans", imageurl: "images/demo.webp", videourl: "videos/proto.mp4" },
+    { title: "proto-video", catagory: "heros-villans", imageurl: "images/demo.webp", videourl: "videos/proto.mp4" },
+        {title: "proto-video", catagory: "heros-villans", imageurl: "images/demo.webp", videourl: "videos/proto.mp4"},
+    { title: "proto-video", catagory: "heros-villans", imageurl: "images/demo.webp", videourl: "videos/proto.mp4" },
+    { title: "proto-video", catagory: "heros-villans", imageurl: "images/demo.webp", videourl: "videos/proto.mp4" },
+    { title: "proto-video", catagory: "heros-villans", imageurl: "images/demo.webp", videourl: "videos/proto.mp4" },
+    { title: "proto-video", catagory: "heros-villans", imageurl: "images/demo.webp", videourl: "videos/proto.mp4" },
+    { title: "proto-video", catagory: "heros-villans", imageurl: "images/demo.webp", videourl: "videos/proto.mp4" },
+    { title: "proto-video", catagory: "heros-villans", imageurl: "images/demo.webp", videourl: "videos/proto.mp4" },
+    { title: "proto-video", catagory: "heros-villans", imageurl: "images/demo.webp", videourl: "videos/proto.mp4" },
+        {title: "proto-video", catagory: "animated", imageurl: "images/demo.webp", videourl: "videos/proto.mp4"},
+    { title: "proto-video", catagory: "animated", imageurl: "images/demo.webp", videourl: "videos/proto.mp4" },
+    { title: "proto-video", catagory: "animated", imageurl: "images/demo.webp", videourl: "videos/proto.mp4" },
+    { title: "proto-video", catagory: "animated", imageurl: "images/demo.webp", videourl: "videos/proto.mp4" },
+    { title: "proto-video", catagory: "animated", imageurl: "images/demo.webp", videourl: "videos/proto.mp4" },
+    { title: "proto-video", catagory: "animated", imageurl: "images/demo.webp", videourl: "videos/proto.mp4" },
+    { title: "proto-video", catagory: "animated", imageurl: "images/demo.webp", videourl: "videos/proto.mp4" },
+    { title: "proto-video", catagory: "animated", imageurl: "images/demo.webp", videourl: "videos/proto.mp4" },
+    
+        {title: "proto-video", catagory: "heros-villans", imageurl: "images/demo.webp", videourl: "videos/proto.mp4"},
+    { title: "proto-video", catagory: "adventure", imageurl: "images/demo.webp", videourl: "videos/proto.mp4" },
+    { title: "proto-video", catagory: "adventure", imageurl: "images/demo.webp", videourl: "videos/proto.mp4" },
+    { title: "proto-video", catagory: "adventure", imageurl: "images/demo.webp", videourl: "videos/proto.mp4" },
+    { title: "proto-video", catagory: "adventure", imageurl: "images/demo.webp", videourl: "videos/proto.mp4" },
+    { title: "proto-video", catagory: "adventure", imageurl: "images/demo.webp", videourl: "videos/proto.mp4" },
+    { title: "proto-video", catagory: "adventure", imageurl: "images/demo.webp", videourl: "videos/proto.mp4" },
+    { title: "proto-video", catagory: "adventure", imageurl: "images/demo.webp", videourl: "videos/proto.mp4" },
+        {title: "proto-video", catagory: "family", imageurl: "images/demo.webp", videourl: "videos/proto.mp4"},
+    { title: "proto-video", catagory: "family", imageurl: "images/demo.webp", videourl: "videos/proto.mp4" },
+    { title: "proto-video", catagory: "family", imageurl: "images/demo.webp", videourl: "videos/proto.mp4" },
+    { title: "proto-video", catagory: "family", imageurl: "images/demo.webp", videourl: "videos/proto.mp4" },
+    { title: "proto-video", catagory: "family", imageurl: "images/demo.webp", videourl: "videos/proto.mp4" },
+    { title: "proto-video", catagory: "family", imageurl: "images/demo.webp", videourl: "videos/proto.mp4" },
+    { title: "proto-video", catagory: "family", imageurl: "images/demo.webp", videourl: "videos/proto.mp4" },
+    { title: "proto-video", catagory: "family", imageurl: "images/demo.webp", videourl: "videos/proto.mp4" },
+        {title: "proto-video", catagory: "heros-villans", imageurl: "images/demo.webp", videourl: "videos/proto.mp4"},
+    { title: "proto-video", catagory: "musical", imageurl: "images/demo.webp", videourl: "videos/proto.mp4" },
+    { title: "proto-video", catagory: "musical", imageurl: "images/demo.webp", videourl: "videos/proto.mp4" },
+    { title: "proto-video", catagory: "musical", imageurl: "images/demo.webp", videourl: "videos/proto.mp4" },
+    { title: "proto-video", catagory: "musical", imageurl: "images/demo.webp", videourl: "videos/proto.mp4" },
+    { title: "proto-video", catagory: "musical", imageurl: "images/demo.webp", videourl: "videos/proto.mp4" },
+    { title: "proto-video", catagory: "musical", imageurl: "images/demo.webp", videourl: "videos/proto.mp4" },
+    {title: "proto-video", catagory: "musical", imageurl: "images/demo.webp", videourl: "videos/proto.mp4"},
 ];
 const categories = [
     "heros-villans",
@@ -76,8 +140,8 @@ card.addEventListener('click', () => {
             const title = document.createElement('p');
             title.textContent = video.title;
 
+            card.appendChild(title); // rearranging these will change their vertical view
             card.appendChild(img);
-            card.appendChild(title);
             row.appendChild(card);
 
         });

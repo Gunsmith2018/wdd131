@@ -71,10 +71,17 @@
    content: "❌"; 
  }
    /* This section will be the main content*/
+body{
+  min-width: 0;
+}
+  main{
+  min-width: 0;
+}
  .genre-row{
+  min-width: 0;
   background: var(--surface);
-  margin-bottom: 2rem;
-  padding: 1 rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
   
 }
 .genre-row h2{
@@ -86,29 +93,45 @@
   display: flex;
   gap: 1rem;
   overflow-x: auto; /* when this overflows with info, you can scroll to see the rest of it*/
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   scroll-behavior: smooth;
+  width: 100%;
+  max-width: 100%;
+  padding-bottom: 20px;
   
 }
 .video-row::-webkit-scrollbar{
   height: 8px;
 }
 .video-row::-webkit-scrollbar-thumb {
-  background: var(--surface);
+  background: var(--text);
   border-radius: 4px;
 }
 .video-card{
-  max-width: 200px;
+  position: relative;
+  z-index: 1;
+  width: 200px;
+  flex: 0 0 auto;
   border-radius:  8px;
   overflow: hidden;
   cursor: pointer;
-  transition: transform 0.2s ease, box-shadow .02 ease;
+  transition: transform 0.2s ease, box-shadow .02 ease filter .025s ease;
 
 }
-.vidoecard:hover{
-  transform: scale(1.00);
-  box-shadow: var(--highlight-accent);
+.video-card:hover {
+  z-index: 10;
+  transform: scale(1.12);
+  box-shadow:0 2px 20px var(--highlight-accent);
+  filter: brightness(1.15);
+  
 }
+
+.video-card img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 
 
 
