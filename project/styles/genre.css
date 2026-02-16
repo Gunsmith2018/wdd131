@@ -71,9 +71,32 @@
    content: "❌"; 
  }
    /* This section will be the main content*/
-
-
-
+   body{
+    color: var(--text);
+   }
+   main{
+    padding: 20px;
+    box-sizing: border-box;
+   }
+.genres-grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+.genre-card{
+  cursor: pointer;
+  padding: 20px;
+  background: var(--surface);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  border: 1px solid var(--primary-accent);
+  transition: background .25s ease, transform .25s ease;
+}
+.genre-card:hover{
+  background: var(--primary-accent);
+  transform: scale(1.05);
+}
 
 
 /* Footer is just a simple footer*/
@@ -105,5 +128,14 @@
    }
 
    /* This section will be the main content*/
-
+   main{
+    margin-top: 5rem;
+    padding: 1rem;
+   }
+   .genres-grid{
+    grid-template-columns: 1fr;
+   }
+   .video-card{
+    width: 100%;
+   }
 }

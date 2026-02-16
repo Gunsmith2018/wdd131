@@ -91,7 +91,7 @@ body{
 
 .video-row{
   display: flex;
-  gap: 1rem;
+  gap: 5rem;
   overflow-x: auto; /* when this overflows with info, you can scroll to see the rest of it*/
   margin-bottom: 1rem;
   scroll-behavior: smooth;
@@ -113,6 +113,7 @@ body{
   width: 200px;
   flex: 0 0 auto;
   border-radius:  8px;
+
   overflow: hidden;
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow .02 ease filter .025s ease;
@@ -129,11 +130,11 @@ body{
 .video-card img{
   width: 100%;
   height: auto;
+  
   display: block;
+  border: 1px solid var(--text);
+
 }
-
-
-
 
 
 /* Footer is just a simple footer*/
@@ -165,5 +166,14 @@ body{
    }
 
    /* This section will be the main content*/
-
+   main{
+    margin-top: 5rem;
+    padding: 1rem;
+   }
+   .genres-grid{
+    grid-template-columns: 1fr;
+   }
+   .video-card{
+    width: 100%;
+   }
 }
