@@ -75,10 +75,15 @@ main{
 form{
     grid-column:3/4;
     padding: 10px;
+    border: 2px solid var(--primary-accent);
+    border-radius: 10px;
+    box-shadow: 0 0 15px var(--highlight-accent);
+    
 }
 
 .stars{
     display: flex;
+    flex-direction: column;
     padding: 10px;
 }
 .feature{
@@ -116,15 +121,5 @@ footer {
         display: flex;
     }
 
-
-    form{
-        display: flex;
-        flex-direction: column;
-
-    }
-
-    .feature input{
-        padding: 20px;
-    }
 
 }
