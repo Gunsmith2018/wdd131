@@ -1,0 +1,130 @@
+:root{
+--background: #1A1A2E;
+--surface: #16213E;
+--primary-accent: #0F3460;
+--highlight-accent: #E94560;
+--text: #F5F5F5;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body,h1,h2,h3{
+    background: var(--background);
+    color: var(--text);
+}
+
+/* Header/ Navigation edits*/
+header{
+    padding: 1rem;
+    text-align: center;
+}
+#page-title{
+    display:block;
+    font-weight: bold;
+}
+nav{
+    background: var(--surface);
+}
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+.navigation a {
+    text-decoration: none;
+    color: var(--text);
+    padding: 0px 20px;
+    transition: background 0.25s ease;
+}
+.navigation a:hover{
+    background: var(--primary-accent);
+    color: var(--text);
+    box-shadow: 0 0 8px var(--highlight-accent);
+    border-radius: 5px;
+}
+    /* Hamburger Menu*/
+    #menu{
+        display: none;
+        cursor: pointer;
+    }
+    #menu::before{
+        content: "≡";
+        cursor: pointer;
+        color: var(--text);
+    }
+    #menu.show::before{
+        content: "❌";
+    }
+    /* Hamburger Menu*/
+/* Header/ Navigation edits*/
+
+/* Form layout*/
+h1{
+    display:flex;
+    justify-content: center;
+}
+h2{
+    padding: 2rem;
+}
+main{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+}
+form{
+    grid-column:3/4;
+    padding: 10px;
+}
+
+.stars{
+    display: flex;
+    padding: 10px;
+}
+.feature{
+    max-width: 300px;
+}
+
+.review, .username, .submit{
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+    padding: 10px;
+}
+/* Form layout*/
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 40em) {
+
+    #menu{
+        display:block;
+        position: absolute;
+        top: 1rem;
+        left: 1rem
+    }
+
+    .navigation{
+        display: none;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .navigation.show{
+        display: flex;
+    }
+
+
+    form{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .feature input{
+        padding: 20px;
+    }
+
+}

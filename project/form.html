@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIdeo Archive</title>
+    <meta name="description" content="This is the main page that will include children (kid) content.">
+    <meta name="author" content="Aaron Smith">
+    <!--Fonts-->
+   <!--CSS Links-->
+    <link rel="stylesheet" href="styles/form.css">
+
+    <!--Java Script Links-->
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+<body>
+    <header>
+                <span id="page-title">Video Arcive (Form)</span>
+                <a id="menu" href="#"></a>
+                <nav>
+                    <ul class="navigation">
+                        <li><a href="main.html" title="home">Home</a></li>
+                        <li><a href="kids.html" title="kids">Kids</a></li>
+                        <li><a href="genres.html" title="genres" class="active">Genres</a></li>
+                        <li><a href="form.html" title="form">form</a></li>
+                    </ul>
+                </nav>
+    </header>
+<main>
+        <form id="feedbackform" method="get" action="review.html">
+            <h2>Video feedback Form</h2>
+
+        <label for="category">Feedback options</label>
+            <select id="category" name="category" required>
+
+                    <option value="" disabled selected>Select a catagory</option>
+                    
+            </select>
+            <div class="stars"><!--Allows the User to select from 1-5 starts-->
+                <div>
+                    <input type="radio" id="onestar" name="stars" value="1" required>
+                    <label for="onestar">&star;</label>
+                </div>
+                <div>
+                    <input type="radio" id="twostar" name="stars" value="2" required>
+                    <label for="twostar">&star;&star;</label>
+                </div>
+                <div>
+                    <input type="radio" id="threestar" name="stars" value="3" required>
+                    <label for="threestar">&star;&star;&star;</label>
+                </div>
+                <div>
+                    <input type="radio" id="fourstar" name="stars" value="4" required>
+                    <label for="fourstar">&star;&star;&star;&star;</label>
+                </div>
+                <div>
+                    <input type="radio" id="fivestar" name="stars" value="5" required>
+                    <label for="fivestar">&star;&star;&star;&star;&star;</label>
+                </div>
+            </div>
+
+            <label for="date-installed">Date of watched or visited</label>
+            <input type="date" id="date-installed" name="date-installed" required><!-- Allowing the User to pick a Date -->
+
+                <fieldset class="feature">
+                    <legend>Features (check all that apply)</legend>
+                    
+                    
+                    <input type="checkbox" id="feature2" name="features" value="ease-of-use"> <!-- Allows the User to select multiple features -->
+                    <label for="feature2">Ease of Use</label><br>
+
+                    <input type="checkbox" id="feature3" name="features" value="performance"> <!-- Allows the User to select multiple features -->
+                    <label for="feature3">Performance</label><br>
+
+                    <input type="checkbox" id="feature4" name="features" value="design"> <!-- Allows the User to select multiple features -->
+                    <label for="feature4">Design</label><br>
+                </fieldset>
+                <br>
+
+            <div class="review">
+                <label for="review">Written review</label>
+                <textarea id="review" name="review" rows="5" cols="40" required></textarea> <!-- Allows the User to type up their review -->
+            </div>
+
+            <div class="username">
+                <label for="username">Your Name(optional)</label>
+                <input type="text" id="username" name="username" placeholder="optional"> <!-- Allows the User to input their username if desired-->
+            </div>
+
+            <div class="submit">
+                <input type="submit" id="submit-review" value="Submit feedback"> <!-- Allows the user to submit their review-->
+            </div>
+
+        </form>    
+    </main>
+    <footer>
+    <p><span id="currentyear"></span> Aaron Smith | United States|</p> <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
